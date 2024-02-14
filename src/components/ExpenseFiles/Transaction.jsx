@@ -44,7 +44,12 @@ function Transaction({ expense, deleteExpense, userId }) {
   };
 
   return (
-    <TransactionWrapper key={expense.id} amount={expense.amount}>
+    <TransactionWrapper
+      key={expense.id}
+      style={{
+        borderRight: expense.amount > 0 ? "5px solid green" : "5px solid red",
+      }}
+    >
       <TransactionOptions>
         {editMode ? (
           <div className="update">

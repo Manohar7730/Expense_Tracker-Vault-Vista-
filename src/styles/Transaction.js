@@ -9,8 +9,6 @@ const TransactionStyles = {
     justify-content: space-between;
     padding: 0.5rem;
     height: 100%;
-    border-right: ${({ amount }) =>
-      amount > 0 ? "5px solid green" : "5px solid red"};
   `,
   TransactionOptions: css`
     height: 100%;
